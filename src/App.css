@@ -28,6 +28,47 @@
   color: #61dafb;
 }
 
+/* App.css */
+#ledScreen {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio (height/width * 100%) */
+  background-color: #000;
+  overflow: hidden;
+}
+
+#ledScreen .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.solid-pattern {
+  width: 50%;
+  height: 50%;
+  background-color: #ffffff;
+}
+
+.stripes-pattern {
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(45deg, #ffffff, #ffffff 10px, #000 10px, #000 20px);
+}
+
+.checkerboard-pattern {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><rect width="5" height="5" fill="#000"/><rect x="5" y="5" width="5" height="5" fill="#000"/><rect x="0" y="5" width="5" height="5" fill="#fff"/><rect x="5" y="0" width="5" height="5" fill="#fff"/></svg>');
+}
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

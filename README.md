@@ -24,5 +24,5 @@ This is a React-based dashboard application designed to manage and customize LED
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/led-display-management-dashboard.git
+   git clone https://github.com/fweshi/OsVision-Dashboard.git
    cd led-display-management-dashboard
